@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodosComponent } from './MyComponents/todos/todos.component';
 import { TodoItemComponent } from './MyComponents/todo-item/todo-item.component';
+import { AddTodoComponent } from './MyComponents/add-todo/add-todo.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -13,6 +15,7 @@ import { TodoItemComponent } from './MyComponents/todo-item/todo-item.component'
     AppComponent,
     TodosComponent,
     TodoItemComponent,
+    AddTodoComponent,
     // TodoItemComponent,
     // AddTodoComponent,
     // AboutComponent
@@ -20,7 +23,7 @@ import { TodoItemComponent } from './MyComponents/todo-item/todo-item.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // FormsModule
+     FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
