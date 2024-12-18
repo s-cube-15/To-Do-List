@@ -11,13 +11,14 @@ import { Todo } from 'src/app/Todo';
 export class TodosComponent {
   localItem: any;
   todos: Todo[];
+
   constructor() {
     this.localItem = localStorage.getItem("todos");
     if (this.localItem == null){  
         this.todos = []
     }
     else{   this.todos=JSON.parse(this.localItem);}
-
+   
 
   }
   ngOnInit(): void {
